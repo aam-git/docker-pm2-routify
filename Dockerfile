@@ -1,4 +1,4 @@
-FROM keymetrics/pm2:latest-stretch
+FROM keymetrics/pm2:12-stretch
 LABEL maintainer="AAMServices <info@aamservices.uk>"
 
 WORKDIR /usr/src/app
