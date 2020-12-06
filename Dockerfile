@@ -2,6 +2,8 @@ FROM keymetrics/pm2:latest-stretch
 LABEL maintainer="AAMServices <info@aamservices.uk>"
 
 RUN groupadd -r routify && useradd --no-log-init -r -g routify routify
+RUN mkdir /usr/src/app && chown -R routify:routify /usr/src/app
+
 USER routify
 
 WORKDIR /usr/src/app
